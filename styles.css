@@ -1,0 +1,96 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilo para o corpo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('background.jpeg') no-repeat center 20%; /* Ajustando a posição do plano de fundo */
+    background-size: cover;
+}
+
+/* Estilo para o contêiner principal */
+.link-tree-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.288);
+    padding: 20px; /* Reduzindo o padding */
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 320px; /* Reduzindo o tamanho máximo */
+    width: 100%;
+    margin: 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 480px) {
+    .link-tree-container {
+        max-width: 280px; /* Reduzindo ainda mais o tamanho máximo */
+    }
+}
+
+/* Estilo para o logo */
+.logo {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid rgba(63, 18, 65, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+/* Estilo para o título */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+}
+
+/* Estilo para os links */
+.links a {
+    display: block;
+    background-color: rgb(114, 16, 57);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    margin: 10px 0;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Estilo para o botão de abrir mais links */
+.open-links-button {
+    background-color: rgb(114, 16, 57);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Estilo hover para os links e botão */
+.links a:hover,
+.open-links-button:hover {
+    background-color: rgba(63, 18, 65, 0.9);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(63, 18, 65, 0.2);
+}
+
+/* Estilo para o footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #33333304;
+    color: #1d1d1d;
+    padding: 10px 0;
+    text-align: center;
+}
